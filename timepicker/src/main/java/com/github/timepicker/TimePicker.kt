@@ -1,4 +1,4 @@
-package com.dowise.timepicker
+package com.github.timepicker
 
 import android.content.Context
 import android.widget.Toast

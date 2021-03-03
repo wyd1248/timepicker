@@ -1,4 +1,4 @@
-package com.dowise.timepicker
+package com.github.timepicker
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
