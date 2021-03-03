@@ -1,2 +1,3 @@
+include ':timepicker'
 include ':app'
 rootProject.name = "timepicker"

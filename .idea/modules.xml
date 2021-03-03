@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/timepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/timepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/timepicker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/timepicker.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/timepicker/timepicker.timepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/timepicker/timepicker.timepicker.iml" />
     </modules>
   </component>
 </project>
