@@ -39,7 +39,7 @@ publishing {
             // Self-explanatory metadata for the most part
             pom {
                 name = PUBLISH_ARTIFACT_ID
-                description = 'This is a test library'
+                description = 'This is a time picker for Android.'
                 // If your project has a dedicated site, use its URL here
                 url = 'https://github.com/wyd1248/timepicker'
                 licenses {
@@ -51,18 +51,17 @@ publishing {
                 }
                 developers {
                     developer {
-                        id = 'daqi92'
-                        name = 'TestAccount'
-                        email = 'wyd248@gmail.com'
+                        name = 'TestUser'
+                        email = 'tesuseremail134890@gmail.com'
                     }
                 }
                 // Version control info, if you're using GitHub, follow the format as seen here
                 scm {
                     //修改成你的Git地址：
-                    connection = 'scm:git:github.com:wyd1248/timepicker.git'
+                    connection = 'scm:git:github.com/wyd1248/timepicker.git'
                     developerConnection = 'scm:git:ssh://github.com/wyd1248/timepicker.git'
                     //分支地址：
-                    url = 'https://github.com/wyd1248/timepicker'
+                    url = 'https://github.com/wyd1248/timepicker/tree/main'
                 }
                 // A slightly hacky fix so that your POM will include any transitive dependencies
                 // that your library builds upon
@@ -85,11 +84,11 @@ publishing {
             // This is an arbitrary name, you may also use "mavencentral" or
             // any other name that's descriptive for you
             name = "TimePicker"
+            version PUBLISH_VERSION
 
-            def releasesRepoUrl = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
-            def snapshotsRepoUrl = "https://oss.sonatype.org/content/repositories/snapshots/"
-            // You only need this if you want to publish snapshots, otherwise just set the URL
-            // to the release repo directly
+            def releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+            def snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
+
             url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
 
             // The username and password we've fetched earlier

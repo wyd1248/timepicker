@@ -1,7 +1,7 @@
 package com.github.timepicker
 
+import android.app.TimePickerDialog
 import android.content.Context
-import android.widget.TimePicker
 import android.widget.Toast
 
 object TimePicker {
@@ -11,8 +11,13 @@ object TimePicker {
     }
 
     fun showTimePicker(context: Context) {
-        TimePicker(context).setOnTimeChangedListener { _, hourOfDay, minute ->
-            show(context, "$hourOfDay and $minute")
-        }
+        TimePickerDialog(
+            context, { _, hourOfDay, minute ->
+                show(
+                    context,
+                    "$hourOfDay:$minute"
+                )
+            }, 1, 2, true
+        ).show()
     }
 }
